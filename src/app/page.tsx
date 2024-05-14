@@ -1,113 +1,145 @@
 import Image from "next/image";
+import Link from "next/link";
+import { FaCircle } from "react-icons/fa";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:size-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <div>
+      <div className="bg-gradient-to-r from-blue-800 via-20% via-purple-500 to-neutral-900  h-3 w-full"></div>
+      <div className="w-full h-[800px] bg-no-repeat bg-cover bg-fixed bg-black text-white" style={{ backgroundImage: "url('/Astronaut helmet-cuate.svg')" }}>
+        <div className="w-full h-[inherit] bg-purple-800 bg-opacity-0">
+          <div className="py-5 mb-10 px-10 flex justify-between">
+            <div></div>
+            <div className="flex items-center gap-5 font-bold">
+              <Link href={"/auth"}>Open App</Link>
+              <Link href={"https://spacelisk.gitbook.io/space-lisk/"} target="_blank">Docs</Link>
+            </div>
+          </div>
+
+          <div className="flex justify-center mb-6">
+            <div className="font-extrabold flex gap-2 md:gap-3 items-center">
+              <div className=" md:text-3xl">SPACE</div>
+              <div className="pt-0 md:pt-1"><FaCircle className="text-[8px] md:text-[10px]" /></div>
+              <div className=" md:text-3xl">LISK</div>
+            </div>
+          </div>
+
+          <div className="flex justify-center mb-[370px]">
+            <div className="font-extrabold md:flex gap-5 items-center">
+              <div className="text-4xl md:text-7xl">{"LET'S"}</div>
+              <div className="text-4xl md:text-7xl bg-black mb-3 md:mb-0">
+                <div className="px-4 py-3 bg-blue-900 text-neutral-100 ml-2 mt-3">ABSTRACT</div>
+              </div>
+              <div className="text-4xl md:text-7xl">TOGETHER</div>
+            </div>
+          </div>
+
+          <div className="flex justify-center">
+            <div className="rounded-full bg-black py-4">
+              <Link href="https://spacelisk.gitbook.io/space-lisk/" target="_blank" className="px-10 py-4 bg-purple-700 text-neutral-50 rounded-full font-bold text-xl ml-1 mt-2">Explore docs</Link>
+            </div>
+          </div>
+
         </div>
       </div>
 
-      <div className="relative z-[-1] flex place-items-center before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
+      <div className="w-full pb-[100px] bg-orange-50 px-[30px] md:px-[50px] pt-[60px] md:pt-0">
+        <div className="px-5 md:px-10 grid grid-cols-1 md:grid-cols-2 mb-[100px]">
+          <div className="flex items-center">
+            <div className="">
+              <div className=" mb-4 text-xl font-bold inline-block ">Unleash the Future <br /> of Transactions with Space Lisk</div>
+              <div className="font-light">
+                Space Lisk is a revolutionary suite designed to propel account abstraction on the Lisk chain, a powerful Optimism superchain.
+                {"We've"} meticulously crafted three groundbreaking tools to simplify and secure your interactions within the Lisk ecosystem.
+              </div>
+            </div>
+          </div>
+          <div className="flex md:pl-10 md:pr-10 pr-3 pt-[50px] md:pt-0">
+            <div className="w-full bg-gradient-to-r from-purple-800 via-2% via-blue-500 via-30% to-neutral-900 h-[auto] pb-4 rounded-xl" >
+              <div className="bg-no-repeat bg-cover w-full bg-neutral-900 h-[auto] -mt-4 ml-3 rounded-xl " >
+                <img src={"/code4.jpg"} alt="code" className="w-full" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="mb-[80px]">
+          <div className="flex justify-center font-bold text-xl mb-3">
+            <div>Streamlined Transactions with ERC-4337 Bundler</div>
+          </div>
+
+          <div className="px-[10px] mb-10">
+            <center>
+              Experience a frictionless transaction experience with our innovative ERC-4337 bundler.
+              This tool eliminates the need for individual user signatures, streamlining the process and boosting transaction efficiency.
+              The bundler employs intelligent algorithms to group UserOperations strategically.
+              This optimization ensures efficient gas utilization within each bundled transaction, further reducing overall fees and improving network scalability.
+            </center>
+          </div>
+
+          <div className="flex justify-center">
+            <div className="rounded-full bg-black py-4">
+              <Link href="https://spacelisk.gitbook.io/space-lisk/" target="_blank" className="px-10 py-4 bg-purple-700 text-neutral-50 rounded-full font-bold text-xl ml-1 mt-2">Explore docs</Link>
+            </div>
+          </div>
+        </div>
+
+        <div className="mb-[100px] md:mb-[150px]">
+          <div className="flex md:pl-10 md:pr-10 pr-3 ">
+            <div className="w-full bg-blue-900 h-[600px] rounded-xl" >
+              <div className="bg-no-repeat bg-cover w-full bg-neutral-900 h-[600px] -mt-4 ml-3 rounded-xl bg-fixed " style={{ backgroundImage: "url('./Solar system-pana.svg')" }} >
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="px-5 md:px-10 grid grid-cols-1 md:grid-cols-2 mb-[150px]">
+          <div className="flex items-center">
+            <div className="">
+              <div className=" mb-4 text-xl font-bold inline-block">Effortless Smart Account Management <br /> with Dedicated SDK</div>
+              <div className="font-light">
+              Introducing our intuitive SDK (Spacelisk-js), your one-stop shop for seamless interaction with smart accounts. 
+              This developer-friendly toolkit empowers you to effortlessly manage your smart contracts and unlock a world of possibilities within the Lisk network.
+              </div>
+            </div>
+          </div>
+          <div className="flex md:pl-10 md:pr-10 pr-3 pt-[50px] md:mt-0">
+            <div className="w-full bg-gradient-to-r from-purple-800 via-2% via-blue-500 via-30% to-neutral-900 h-[auto] pb-4 rounded-xl" >
+              <div className="bg-no-repeat bg-cover w-full bg-neutral-900 h-[auto] -mt-4 ml-3 rounded-xl " >
+                <img src={"/code2.png"} alt="code" className="w-full" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="mb-[150px]">
+          <div className="flex justify-center font-bold text-xl mb-3">
+            <div>Revolutionize Fee Structures and Embrace Gasless Transactions</div>
+          </div>
+
+          <div className="px-[10px] mb-10">
+            <center>
+            Space {"Lisk's"} customizable paymaster contracts empower you to break free from the constraints of traditional gas fee models.  
+            Design fee structures that perfectly align with your specific needs, whether {"you're"} a developer building dApps, 
+            a business owner facilitating user transactions, or simply a power user seeking more control over your finances.
+            The power lies in your hands. Leverage paymaster contracts to establish yourself as a gas benefactor, 
+            covering transaction fees for specific users or groups within the Lisk ecosystem. This opens doors for innovative loyalty programs, 
+            subscription models, and other creative use cases that enhance user experience and drive adoption.
+            </center>
+          </div>
+
+          <div className="flex justify-center">
+            <div className="rounded-full bg-black py-4">
+              <Link href="/auth" className="px-10 py-4 bg-purple-700 text-neutral-50 rounded-full font-bold text-xl ml-1 mt-2">Open app</Link>
+            </div>
+          </div>
+        </div>
+
+        <div className="flex justify-center px-20 gap-3 items-center ">
+           By <a href="https://github.com/chibuzoraustine" target="_blank" className="underline underline-offset-4">Chibuzor Anurigwo</a>
+        </div>
       </div>
-
-      <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-balance text-sm opacity-50">
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+    </div>
   );
 }
